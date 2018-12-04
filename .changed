@@ -1,0 +1,23 @@
+Makefile
+MAKE_MAC=MAKE_MAC_TSCH
+PROJECT_SOURCEFILES += app.c
+
+2.project-conf.h
+#define IEEE802154_CONF_DEFAULT_CHANNEL       0
+#define RF_BLE_CONF_ENABLED                   0
+#define CC26XX_WEB_DEMO_CONF_MQTT_CLIENT      0 
+#define CC26XX_WEB_DEMO_CONF_COAP_SERVER      0
+#define TSCH_CONF_EB_PERIOD     (1 * CLOCK_SECOND)
+#define TSCH_CONF_MAX_EB_PERIOD (1 * CLOCK_SECOND)
+#define UIP_CONF_BUFFER_SIZE                330
+#define NETSTACK_MAX_ROUTE_ENTRIES            4
+#define NBR_TABLE_CONF_MAX_NEIGHBORS          4
+
+3.cc26x0-web-demo.c
+#include "app.h"
+process_start(&test_proc,NULL);
+
+4.add app.c app.h 
+
+5.rpl-border-router Makefile 
+MAKE_MAC=MAKE_MAC_TSCH
