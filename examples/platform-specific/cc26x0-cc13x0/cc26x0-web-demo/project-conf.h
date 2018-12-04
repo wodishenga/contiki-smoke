@@ -32,7 +32,7 @@
 #define PROJECT_CONF_H_
 /*---------------------------------------------------------------------------*/
 /* Change to match your configuration */
-#define IEEE802154_CONF_PANID            0xABCD
+#define IEEE802154_CONF_PANID            0x8888
 #define IEEE802154_CONF_DEFAULT_CHANNEL       0
 #define RF_BLE_CONF_ENABLED                   0
 /*---------------------------------------------------------------------------*/
@@ -80,7 +80,7 @@
 //#define LOG_CONF_LEVEL_RPL                         LOG_LEVEL_DBG
 //#define LOG_CONF_LEVEL_6LOWPAN                     LOG_LEVEL_DBG
 //#define LOG_CONF_LEVEL_TCPIP                       LOG_LEVEL_DBG
-//#define LOG_CONF_LEVEL_MAC                         LOG_LEVEL_DBG
+#define LOG_CONF_LEVEL_MAC                         LOG_LEVEL_DBG
 //#define TSCH_LOG_CONF_PER_SLOT                     1
 //#define LOG_CONF_LEVEL_FRAMER                      LOG_LEVEL_DBG
 /*---------------------------------------------------------------------------*/
